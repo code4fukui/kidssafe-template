@@ -1,5 +1,7 @@
 # キッズセーフ 〇〇市 〇〇地区 / KidsSafe
 
+- https://code4fukui.github.io/kidssafe-template/
+
 - 〇〇市〇〇地区の地域安全マップを作成して、スマホやパソコンで見られる形で共有するツールです
 - ExcelやNumbersを使ってCSVデータを編集しアップロードすることで更新できます
 - [キッズセーフ by Code for FUKUI](https://github.com/code4fukui/kidssafe/) を使って作られています
@@ -11,7 +13,7 @@
 
 ## 利用方法
 
-1. リポジトリ [kidssafe-template](https://github.com/code4fukui/kidssafe-template/) で、「Use this template」「Create a new repository」する
+1. リポジトリ [kidssafe-template](https://github.com/code4fukui/kidssafe-template/) で、「Use this template」「Create a new repository」し、「kidssafe-」に続けて地区名などを英数名で設定する （例、kidssafe-okamoto)
 2. [README.md](README.md)、[アプリ設定](index.html)、[データ](index.csv)を地区に合わせて変更する
 3. GitHub Pages(SettingsのPages)を設定し公開する
 
