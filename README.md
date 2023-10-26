@@ -54,5 +54,5 @@
 
 ## 要望などは
 
-- この地区のキッズセーフについて [Issues](./issues)
+- この地区のキッズセーフについて [Issues](../../issues)
 - キッズセーフのアプリについて [キッズセーフのIssues](https://github.com/code4fukui/kidssafe/issues)
