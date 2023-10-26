@@ -19,6 +19,9 @@
 
 1. 変更したいデータを確認する (例、[aed.csv](aed.csv))
 2. ダウンロードボタンを押し、ダウンロードする
+
+<img width="306" alt="image" src="https://github.com/code4fukui/kidssafe-template/assets/1715217/053db2b7-1931-4b7c-b369-326523190d64">
+
 3. Excelで編集する
 4. 位置情報は、「[緯度経度地図](https://fukuno.jig.jp/app/map/latlng/#%E8%B6%8A%E5%89%8D%E5%B8%82)」から該当場所に動かして、Geo3x3欄に表示された文字列を項目Geo3x3にコピーする
 
@@ -26,6 +29,9 @@
 
 5. Excelで保存する
 6. [./](./) に編集したファイルをドロップし、アップロード(Upload)する
+
+<img width="732" alt="image" src="https://github.com/code4fukui/kidssafe-template/assets/1715217/53bdf652-f38a-47dc-8b3e-defa62f989ce">
+
 7. 1分ほど待つと更新される（しばらくはキャッシュが使われることがあるので、プライベートモードなどで開いて確認するといい）
 
 ## データ種の追加方法
