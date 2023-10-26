@@ -4,7 +4,7 @@
 - ExcelやNumbersを使ってCSVデータを編集しアップロードすることで更新できます
 - [キッズセーフ by Code for FUKUI](https://github.com/code4fukui/kidssafe/) を使って作られています
 
-## ソースコード
+## 設定方法
 
 - [index.html](index.html) - アプリ設定（都市名、地域名、ソースコード）を設定する
 - [index.csv](index.csv) - 地図に表示するCSVデータを設定する
@@ -51,3 +51,8 @@
 3. [index.csv](index.csv)や各データをダウンロードし、Excelで開き、icon項目を該当ファイル名に変更する
 4. 編集したファイルを [./](./) へアップロードする
 5. 1分ほど待つと更新される（しばらくはキャッシュが使われることがあるので、プライベートモードなどで開いて確認するといい）
+
+## 要望などは
+
+- この地区のキッズセーフについて [Issues](./issues)
+- キッズセーフのアプリについて [キッズセーフのIssues](https://github.com/code4fukui/kidssafe/issues)
