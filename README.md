@@ -1,49 +1,25 @@
-# キッズセーフ 〇〇市 〇〇地区 / KidsSafe
+# KidsSafe
 
-- https://code4fukui.github.io/kidssafe-template/
+A tool to create and share a community safety map for a local area, using Excel/Numbers to edit and upload CSV data.
 
-- 〇〇市〇〇地区の地域安全マップを作成して、スマホやパソコンで見られる形で共有するツールです
-- ExcelやNumbersを使ってCSVデータを編集しアップロードすることで更新できます
-- [キッズセーフ by Code for FUKUI](https://github.com/code4fukui/kidssafe/) を使って作られています
+## Demo
+https://code4fukui.github.io/kidssafe-template/
 
-## データの更新方法
+## Features
+- Create and update a local area safety map using CSV data
+- Edit CSV data in Excel/Numbers and upload to update the map
+- Uses the [KidsSafe project by Code for FUKUI](https://github.com/code4fukui/kidssafe/)
 
-1. 変更したいデータを確認する (例、[aed.csv](aed.csv))
-2. ダウンロードボタンを押し、ダウンロードする
+## Usage
+1. Check the data you want to update (e.g. [aed.csv](aed.csv))
+2. Download the CSV file
+3. Edit the file in Excel
+4. For location data, use the [Latitude Longitude Map](https://fukuno.jig.jp/app/map/latlng/#%E8%B6%8A%E5%89%8D%E5%B8%82) to find the Geo3x3 code
+5. Save the edited file
+6. Upload the edited file to the [`./`](./) directory
 
-<img width="306" alt="image" src="https://github.com/code4fukui/kidssafe-template/assets/1715217/053db2b7-1931-4b7c-b369-326523190d64">
+## Data / API
+This project uses CSV data files hosted on the GitHub repository.
 
-3. Excelで編集する
-4. 位置情報は、「[緯度経度地図](https://fukuno.jig.jp/app/map/latlng/#%E8%B6%8A%E5%89%8D%E5%B8%82)」から該当場所に動かして、Geo3x3欄に表示された文字列を項目Geo3x3にコピーする
-
-<img width="511" alt="image" src="https://user-images.githubusercontent.com/1715217/219602296-2d3b72ce-581a-4ba8-8c69-edbe1b95ee76.png">
-
-5. Excelで保存する
-6. [./](./) に編集したファイルをドロップし、アップロード(Upload)する
-
-<img width="306" alt="image" src="https://github.com/code4fukui/kidssafe-template/assets/1715217/53bdf652-f38a-47dc-8b3e-defa62f989ce">
-
-7. 1分ほど待つと更新される（しばらくはキャッシュが使われることがあるので、プライベートモードなどで開いて確認するといい）
-
-## データ種の追加方法
-
-1. [template.csv](template.csv)をダウンロードし、Excelで開く
-2. 2行目以降に地図に設定したい情報を記述する（項目は自由に増やせます）
-3. Excelの「ファイル」「名前を付けて保存」を選び「ファイル形式」を「CSV UTF-8(コンマ区切り)(.csv)」に変更して、データ種類がわかるような英数ファイル名で保存する
-4. [index.csv](index.csv)をダウンロードし、Excelで開く
-5. 3で保存したファイル名とデータ種類名、アイコンファイル名を記述する
-6. [./](./) にindex.csvと3で保存したファイルをドロップし、アップロード(Upload)する
-7. 1分ほど待つと更新される（しばらくはキャッシュが使われることがあるので、プライベートモードなどで開いて確認するといい）
-
-## アイコン追加方法
-
-1. 大きさ100x100程度の画像を用意し、PNG形式、半角英数名で保存する（JPEGだと背景が透けません）
-2. [icon](icon)フォルダを表示し、エクスプローラーなどからドロップし、アップロード(Upload)する
-3. [index.csv](index.csv)や各データをダウンロードし、Excelで開き、icon項目を該当ファイル名に変更する
-4. 編集したファイルを [./](./) へアップロードする
-5. 1分ほど待つと更新される（しばらくはキャッシュが使われることがあるので、プライベートモードなどで開いて確認するといい）
-
-## 要望などは
-
-- この地区のキッズセーフについて [Issues](../../issues)
-- キッズセーフのアプリについて [キッズセーフのIssues](https://github.com/code4fukui/kidssafe/issues)
+## License
+MIT License
