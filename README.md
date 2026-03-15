@@ -1,5 +1,7 @@
 # KidsSafe
 
+> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
+
 A tool to create and share a community safety map for a local area, using Excel/Numbers to edit and upload CSV data.
 
 ## Demo
