@@ -14,7 +14,5 @@ https://code4fukui.github.io/kidssafe-template/
 2. 編集したファイルを[./](./)にドロップしてアップロードする
 3. 1分ほど待つと更新される
 
-詳しい手順は[README.md](README.md)を参照してください。
-
 ## ライセンス
 MIT License
