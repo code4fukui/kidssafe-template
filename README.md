@@ -1,49 +1,43 @@
-# キッズセーフ 〇〇市 〇〇地区 / KidsSafe
+# kidssafe-template
 
-- https://code4fukui.github.io/kidssafe-template/
+> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
 
-- 〇〇市〇〇地区の地域安全マップを作成して、スマホやパソコンで見られる形で共有するツールです
-- ExcelやNumbersを使ってCSVデータを編集しアップロードすることで更新できます
-- [キッズセーフ by Code for FUKUI](https://github.com/code4fukui/kidssafe/) を使って作られています
+A template for creating and sharing a community safety map. This project allows you to manage map data using simple CSV files, which can be edited in tools like Excel or Numbers. It is built upon the [KidsSafe project by Code for FUKUI](https://github.com/code4fukui/kidssafe/).
 
-## データの更新方法
+## Demo
 
-1. 変更したいデータを確認する (例、[aed.csv](aed.csv))
-2. ダウンロードボタンを押し、ダウンロードする
+https://code4fukui.github.io/kidssafe-template/
 
-<img width="306" alt="image" src="https://github.com/code4fukui/kidssafe-template/assets/1715217/053db2b7-1931-4b7c-b369-326523190d64">
+## Features
 
-3. Excelで編集する
-4. 位置情報は、「[緯度経度地図](https://fukuno.jig.jp/app/map/latlng/#%E8%B6%8A%E5%89%8D%E5%B8%82)」から該当場所に動かして、Geo3x3欄に表示された文字列を項目Geo3x3にコピーする
+- Create and share a community safety map via GitHub Pages.
+- Manage map points using simple CSV files, editable in Excel or Numbers.
+- Easily add new data layers and custom icons by editing [index.csv](index.csv).
+- Uses [Geo3x3](https://github.com/jigjp/geo3x3) for location encoding, with a simple [lookup tool](https://fukuno.jig.jp/app/map/latlng/#%E8%B6%8A%E5%89%8D%E5%B8%82).
 
-<img width="511" alt="image" src="https://user-images.githubusercontent.com/1715217/219602296-2d3b72ce-581a-4ba8-8c69-edbe1b95ee76.png">
+## Getting Started
 
-5. Excelで保存する
-6. [./](./) に編集したファイルをドロップし、アップロード(Upload)する
+1.  **Create your repository:** Click the "Use this template" button to create a new repository.
+2.  **Enable GitHub Pages:** In your new repository's "Settings", go to the "Pages" section. Select the `main` branch as the source and save. Your map will be live at `https://<your-username>.github.io/<your-repo-name>/`.
+3.  **Customize your map:** Edit the `index.html` file and change the placeholder city (`〇〇市`) and district (`〇〇地区`) names to your own.
 
-<img width="306" alt="image" src="https://github.com/code4fukui/kidssafe-template/assets/1715217/53bdf652-f38a-47dc-8b3e-defa62f989ce">
+## Updating Map Data
 
-7. 1分ほど待つと更新される（しばらくはキャッシュが使われることがあるので、プライベートモードなどで開いて確認するといい）
+1.  From your repository, download a data file you wish to edit (e.g., [aed.csv](aed.csv)).
+2.  Open and modify the file in Excel, Numbers, or any spreadsheet application.
+3.  To add new locations, use the [Latitude Longitude Map](https://fukuno.jig.jp/app/map/latlng/#%E8%B6%8A%E5%89%8D%E5%B8%82) to find the correct Geo3x3 code.
+4.  Upload the modified CSV file back to the root directory of your repository.
+5.  Your changes will be reflected on the live map after about a minute.
 
-## データ種の追加方法
+## Adding New Data Layers
 
-1. [template.csv](template.csv)をダウンロードし、Excelで開く
-2. 2行目以降に地図に設定したい情報を記述する（項目は自由に増やせます）
-3. Excelの「ファイル」「名前を付けて保存」を選び「ファイル形式」を「CSV UTF-8(コンマ区切り)(.csv)」に変更して、データ種類がわかるような英数ファイル名で保存する
-4. [index.csv](index.csv)をダウンロードし、Excelで開く
-5. 3で保存したファイル名とデータ種類名、アイコンファイル名を記述する
-6. [./](./) にindex.csvと3で保存したファイルをドロップし、アップロード(Upload)する
-7. 1分ほど待つと更新される（しばらくはキャッシュが使われることがあるので、プライベートモードなどで開いて確認するといい）
+You can add new categories of points (e.g., "Public Restrooms") to the map:
 
-## アイコン追加方法
+1.  Create a new CSV file for your data (e.g., `restrooms.csv`).
+2.  Add a corresponding icon image (e.g., `restroom_icon.png`).
+3.  Edit [index.csv](index.csv) and add a new line to register your layer: `Public Restrooms,restrooms.csv,restroom_icon.png`.
+4.  Upload your new CSV file and icon image to the repository.
 
-1. 大きさ100x100程度の画像を用意し、PNG形式、半角英数名で保存する（JPEGだと背景が透けません）
-2. [icon](icon)フォルダを表示し、エクスプローラーなどからドロップし、アップロード(Upload)する
-3. [index.csv](index.csv)や各データをダウンロードし、Excelで開き、icon項目を該当ファイル名に変更する
-4. 編集したファイルを [./](./) へアップロードする
-5. 1分ほど待つと更新される（しばらくはキャッシュが使われることがあるので、プライベートモードなどで開いて確認するといい）
+## License
 
-## 要望などは
-
-- この地区のキッズセーフについて [Issues](../../issues)
-- キッズセーフのアプリについて [キッズセーフのIssues](https://github.com/code4fukui/kidssafe/issues)
+MIT License
